@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page - Exemplo com CSS Externo</title>
+    
+    <!-- CSS Externo: estilos definidos em arquivo separado -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="cabecalho">
+        <h1>Bem-vindo ao Curso de Desenvolvimento Web</h1>
+        <h2>Aprenda HTML, CSS e JavaScript</h2>
+    </div>
+    
+    <div class="container">
+        <!-- Seção com seletor de classe e elemento -->
+        <div class="secao secao-destaque">
+            <h3>Por que escolher nosso curso?</h3>
+            
+            <p class="texto-justificado">
+                Nosso curso oferece uma abordagem prática e completa para você se tornar um desenvolvedor web profissional. Com instrutores experientes e projetos reais, você aprenderá as tecnologias mais demandadas pelo mercado.
+            </p>
+        </div>
+        
+        <!-- Seção demonstrando seletores de classe -->
+        <div class="secao secao-verde">
+            <h4>Módulos do Curso</h4>
+            
+            <p>
+                <span class="destaque-modulo">Módulo 1:</span> Fundamentos de HTML
+            </p>
+            
+            <p>
+                <span class="destaque-modulo">Módulo 2:</span> Estilização com CSS
+            </p>
+            
+            <p>
+                <span class="destaque-modulo">Módulo 3:</span> Interatividade com JavaScript
+            </p>
+        </div>
+        
+        <!-- Seção demonstrando múltiplas classes -->
+        <div class="secao secao-amarela">
+            <h5>Depoimentos de Alunos</h5>
+            
+            <p class="texto-centralizado texto-italico">
+                "O melhor curso que já fiz! Aprendi muito e consegui meu primeiro emprego como desenvolvedor."
+            </p>
+            
+            <p class="texto-centralizado texto-pequeno">
+                - João Silva
+            </p>
+        </div>
+        
+        <!-- Seção demonstrando seletor de ID -->
+        <div id="cta" class="secao">
+            <h6>Inscreva-se Agora!</h6>
+            
+            <p class="texto-centralizado">
+                Vagas limitadas! Garanta sua vaga e comece sua jornada no desenvolvimento web.
+            </p>
+            
+            <p class="texto-centralizado">
+                <span class="botao">INSCREVER-SE</span>
+            </p>
+        </div>
+        
+        <!-- Demonstração de especificidade -->
+        <div class="secao">
+            <h3>Demonstração de Especificidade</h3>
+            
+            <p>Este parágrafo usa a cor padrão definida para todos os parágrafos.</p>
+            
+            <p class="texto-especial">Este parágrafo usa uma classe, que tem maior especificidade que o seletor de elemento.</p>
+            
+            <p id="paragrafo-unico">Este parágrafo usa um ID, que tem a maior especificidade entre os seletores básicos.</p>
+        </div>
+        
+        <!-- Demonstração de herança -->
+        <div class="secao secao-herdada">
+            <h3>Demonstração de Herança</h3>
+            
+            <p>Este parágrafo herda a cor e o tamanho da fonte definidos no div pai (.secao-herdada).</p>
+            
+            <p>Elementos filhos <span>como este span</span> também herdam as propriedades de texto.</p>
+        </div>
+    </div>
+    
+    <!-- Rodapé com seletor de ID -->
+    <div id="rodape">
+        <p>© 2025 Curso de Desenvolvimento Web. Todos os direitos reservados.</p>
+    </div>
+</body>
+</html>

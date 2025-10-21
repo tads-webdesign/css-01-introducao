@@ -1,0 +1,249 @@
+/* CSS Externo - Arquivo de Estilos */
+
+/* ========================================
+   Reset básico e estilos globais
+   ======================================== */
+
+/* Seletor Universal - Remove margens e paddings padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Seletor de Elemento - Estilos para o body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #2c3e50;
+    background-color: #f8f9fa;
+}
+
+/* ========================================
+   Seletores de Elemento - Títulos
+   ======================================== */
+
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    font-size: 36px;
+    margin: 20px 0;
+}
+
+h2 {
+    color: #34495e;
+    text-align: center;
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+h3 {
+    color: #e74c3c;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+h4 {
+    color: #27ae60;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+h5 {
+    color: #d68910;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+h6 {
+    color: #8e44ad;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Seletor de Elemento - Parágrafos */
+p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+/* Seletor de Elemento - Divs */
+div {
+    /* Propriedades herdadas pelos divs, se necessário */
+}
+
+/* Seletor de Elemento - Spans */
+span {
+    /* Spans herdam estilos do elemento pai */
+}
+
+/* ========================================
+   Seletores de Classe
+   ======================================== */
+
+/* Classe para seções */
+.secao {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Classes para cores de fundo das seções */
+.secao-destaque {
+    background-color: #ecf0f1;
+}
+
+.secao-verde {
+    background-color: #d5f4e6;
+}
+
+.secao-amarela {
+    background-color: #fdebd0;
+}
+
+.secao-roxa {
+    background-color: #e8daef;
+}
+
+/* Classes para alinhamento de texto */
+.texto-centralizado {
+    text-align: center;
+}
+
+.texto-justificado {
+    text-align: justify;
+}
+
+.texto-direita {
+    text-align: right;
+}
+
+/* Classes para estilo de texto */
+.texto-italico {
+    font-style: italic;
+}
+
+.texto-negrito {
+    font-weight: bold;
+}
+
+.texto-pequeno {
+    font-size: 14px;
+    color: #7f8c8d;
+}
+
+.texto-grande {
+    font-size: 18px;
+}
+
+/* Classe para destacar módulos */
+.destaque-modulo {
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+/* Classe para botão */
+.botao {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+    display: inline-block;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.botao:hover {
+    background-color: #2980b9;
+}
+
+/* Classe para container principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ========================================
+   Seletores de ID
+   ======================================== */
+
+/* ID para o cabeçalho principal */
+#cabecalho {
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* ID para o rodapé */
+#rodape {
+    margin-top: 40px;
+    padding: 15px;
+    background-color: #34495e;
+    text-align: center;
+}
+
+#rodape p {
+    color: white;
+    font-size: 14px;
+}
+
+/* ID para seção de chamada para ação */
+#cta {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+#cta h6 {
+    color: white;
+}
+
+/* ========================================
+   Exemplo de Especificidade
+   ======================================== */
+
+/* Especificidade: 1 (seletor de elemento) */
+p {
+    color: #2c3e50;
+}
+
+/* Especificidade: 10 (seletor de classe) - Esta regra vence sobre a anterior */
+.texto-especial {
+    color: #e74c3c;
+}
+
+/* Especificidade: 100 (seletor de ID) - Esta regra vence sobre as anteriores */
+#paragrafo-unico {
+    color: #27ae60;
+}
+
+/* ========================================
+   Exemplo de Herança
+   ======================================== */
+
+/* As propriedades de cor e font-size definidas no .secao
+   serão herdadas pelos elementos filhos (p, span, etc.) */
+.secao-herdada {
+    color: #8e44ad;
+    font-size: 18px;
+    font-family: Georgia, serif;
+}
+
+/* ========================================
+   Combinação de Seletores
+   ======================================== */
+
+/* Seletor descendente - estiliza spans dentro de parágrafos */
+p span {
+    font-weight: bold;
+}
+
+/* Seletor com múltiplas classes */
+.secao.secao-destaque {
+    border-left: 4px solid #3498db;
+}

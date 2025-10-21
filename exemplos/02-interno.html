@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page - Exemplo com CSS Interno</title>
+    
+    <!-- CSS Interno: estilos definidos dentro da tag <style> -->
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+        }
+        
+        /* Títulos */
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            font-size: 36px;
+            margin: 20px 0;
+        }
+        
+        h2 {
+            color: #34495e;
+            text-align: center;
+            font-size: 28px;
+            margin: 15px 0;
+        }
+        
+        h3 {
+            color: #e74c3c;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        h4 {
+            color: #27ae60;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        
+        h5 {
+            color: #d68910;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        
+        h6 {
+            color: #8e44ad;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        
+        /* Parágrafos */
+        p {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+        
+        /* Classes personalizadas */
+        .secao {
+            margin: 20px;
+            padding: 20px;
+        }
+        
+        .secao-destaque {
+            background-color: #ecf0f1;
+        }
+        
+        .secao-verde {
+            background-color: #d5f4e6;
+        }
+        
+        .secao-amarela {
+            background-color: #fdebd0;
+        }
+        
+        .secao-roxa {
+            background-color: #e8daef;
+        }
+        
+        .texto-centralizado {
+            text-align: center;
+        }
+        
+        .texto-justificado {
+            text-align: justify;
+        }
+        
+        .texto-italico {
+            font-style: italic;
+        }
+        
+        .texto-pequeno {
+            font-size: 14px;
+            color: #7f8c8d;
+        }
+        
+        .destaque-modulo {
+            font-weight: bold;
+            color: #e74c3c;
+        }
+        
+        .botao {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            font-weight: bold;
+            display: inline-block;
+        }
+        
+        /* ID para o rodapé */
+        #rodape {
+            margin-top: 40px;
+            padding: 15px;
+            background-color: #34495e;
+            text-align: center;
+        }
+        
+        #rodape p {
+            color: white;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bem-vindo ao Curso de Desenvolvimento Web</h1>
+    
+    <h2>Aprenda HTML, CSS e JavaScript</h2>
+    
+    <div class="secao secao-destaque">
+        <h3>Por que escolher nosso curso?</h3>
+        
+        <p class="texto-justificado">
+            Nosso curso oferece uma abordagem prática e completa para você se tornar um desenvolvedor web profissional. Com instrutores experientes e projetos reais, você aprenderá as tecnologias mais demandadas pelo mercado.
+        </p>
+    </div>
+    
+    <div class="secao secao-verde">
+        <h4>Módulos do Curso</h4>
+        
+        <p>
+            <span class="destaque-modulo">Módulo 1:</span> Fundamentos de HTML
+        </p>
+        
+        <p>
+            <span class="destaque-modulo">Módulo 2:</span> Estilização com CSS
+        </p>
+        
+        <p>
+            <span class="destaque-modulo">Módulo 3:</span> Interatividade com JavaScript
+        </p>
+    </div>
+    
+    <div class="secao secao-amarela">
+        <h5>Depoimentos de Alunos</h5>
+        
+        <p class="texto-centralizado texto-italico">
+            "O melhor curso que já fiz! Aprendi muito e consegui meu primeiro emprego como desenvolvedor."
+        </p>
+        
+        <p class="texto-centralizado texto-pequeno">
+            - João Silva
+        </p>
+    </div>
+    
+    <div class="secao secao-roxa">
+        <h6>Inscreva-se Agora!</h6>
+        
+        <p class="texto-centralizado">
+            Vagas limitadas! Garanta sua vaga e comece sua jornada no desenvolvimento web.
+        </p>
+        
+        <p class="texto-centralizado">
+            <span class="botao">INSCREVER-SE</span>
+        </p>
+    </div>
+    
+    <div id="rodape">
+        <p>© 2025 Curso de Desenvolvimento Web. Todos os direitos reservados.</p>
+    </div>
+</body>
+</html>
