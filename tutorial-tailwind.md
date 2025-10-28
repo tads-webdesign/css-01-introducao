@@ -50,7 +50,7 @@ A forma mais rápida para começar, ideal para protótipos e aprendizado.
 <html>
 <head>
     <title>Minha Página com Tailwind</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
     <h1 class="text-3xl font-bold text-center text-blue-900">Título Principal</h1>
@@ -76,34 +76,20 @@ Método recomendado para projetos reais, oferece controle total e otimização.
 **Instalação:**
 
 ```bash
-npm install -D tailwindcss
-npx tailwindcss init
-```
+npm install tailwindcss @tailwindcss/cli
 
-**Configuração (tailwind.config.js):**
-
-```javascript
-module.exports = {
-  content: ["./src/**/*.{html,js}"],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-}
 ```
 
 **CSS de entrada (input.css):**
 
 ```css
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 ```
 
 **Compilação:**
 
 ```bash
-npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
+npx tailwindcss -i ./input.css -o ./output.css --watch
 ```
 
 **HTML:**
@@ -113,7 +99,7 @@ npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
 <html>
 <head>
     <title>Minha Página</title>
-    <link href="/dist/output.css" rel="stylesheet">
+    <link href="/output.css" rel="stylesheet">
 </head>
 <body>
     <h1 class="text-3xl font-bold text-center text-blue-900">Título Principal</h1>
@@ -141,18 +127,12 @@ Uma versão mais completa do CDN que permite alguma personalização.
 <html>
 <head>
     <title>Minha Página</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        clifford: '#da373d',
-                    }
-                }
-            }
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        @theme {
+          --color-clifford: #da373d;
         }
-    </script>
+    </style>
 </head>
 <body>
     <h1 class="text-clifford">Cor personalizada!</h1>
